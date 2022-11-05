@@ -31,9 +31,9 @@ const FeaturedRow = ({ id, title, description }) => {
 
   return (
     <View>
-      <View className="flex-row mt-4 items-center justify-between px-4">
+      <View className=" flex-row mt-4 items-center justify-between px-4">
         <Text className="text-lg font-bold">{title}</Text>
-        <ArrowRightIcon color="#00ccbb" />
+        <ArrowRightIcon color="#ffc554" />
       </View>
       <Text className="  px-4 text-xs text-gray-500">{description}</Text>
       <ScrollView

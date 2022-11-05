@@ -40,37 +40,36 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <SafeAreaView className="bg-white pt-5">
+    <SafeAreaView className="bg-[#fcf4dd] pt-5">
       {/* header */}
       <View className="flex-row pb-3 items-center mx-4  space-x-2">
         <Image
-          source={{
-            uri: "https://links.papareact.com/wru",
-          }}
-          className="w-7 h-7 bg-gray-300 p-4 rounded-full"
+          source={require("../assets/preloader.gif")}
+          className="w-10 h-10 bg-[#ffc554] rounded-full  p-4 "
         />
         <View className="flex-1">
-          <Text className="text-xs font-bold text-gray-400">Deliver Now!</Text>
-          <Text className="text-xl font-bold">
-            Current Location
-            <Ionicons name="chevron-down-outline" size={20} color="#00ccbb" />
+          {/* <Text className="text-xs font-bold text-gray-400">Deliver Now!</Text> */}
+          <Text className="text-2xl text-center font-bold">
+            Food<Text className="text-[#ffc554]"> Gate</Text>
+            {/* <Ionicons name="chevron-down-outline" size={20} color="#00ccbb" /> */}
           </Text>
         </View>
-        <FontAwesome name="user-o" size={30} color="#00ccbb" />
+        <FontAwesome name="user-o" size={30} color="#ffc554" />
       </View>
       {/* search */}
       <View className="flex-row items-center space-x-2 pb-2  mx-4">
-        <View className="flex-row flex-1 space-x-2 bg-gray-200 p-3">
-          <Ionicons name="search-outline" size={20} color="gray" />
+        <View className=" rounded-full flex-row flex-1 space-x-2 bg-white p-3">
+          <Ionicons name="search-outline" size={20} color="#ffc554" />
           <TextInput
             placeholder="Restaurants and cuisines"
             keyboardType="default"
           />
         </View>
-        <Entypo name="sound-mix" size={24} color="#00ccbb" />
+        <Entypo name="sound-mix" size={24} color="#ffc554" />
       </View>
       {/* body */}
       <ScrollView
+        showsVerticalScrollIndicator={false}
         className="bg-gray-100"
         contentContainerStyle={{
           paddingBottom: 100,
